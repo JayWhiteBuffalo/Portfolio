@@ -4,22 +4,35 @@
     box-sizing: border-box;
 }
 body{
-    color:rgb(58, 223, 28);
+    color:black;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: whitesmoke;
 }
+/*JayWhite Header Txt*/
 header {
-    background-color: gray;
+    background-color: whitesmoke;
     display: flex;
-    justify-content: space=between;
+    justify-content: space-around;
     flex-wrap: wrap;
     padding: 20px 35px;
+    text-shadow: 0 0 10px rgba(56, 162, 197, 0.951);
+    z-index: 9999;
+    position: -webkit-sticky;
+    position: fixed;
+
 }
+header span{
+    color: blue;
+}
+
+
 header h1 {
     font-weight: bold;
     font-size: 36px;
     color:white;
     margin: 0;
 }
+/*End JayWhite Header Txt*/
 header nav{
     margin: 7px 0;
 }
@@ -32,22 +45,33 @@ header nav ul {
 
 }
 header nav ul li a {
-    margin: 0 30px;
+    margin: 0 50px;
     font-weight: lighter;
-    font-size: 1.55vs;
+    font-size: 1.55;
+    color: rgb(90, 20, 254);
+    align-items: center;
+    justify-content: space-between;
+    font-size: 18px;
+    
+}
+header nav ul li a:hover{
+    background-color: blue;
+    border-radius: 50%;
+    opacity: 0.7;
 
 }
 .hero{
     background-image: url("../images/sunset.jpg");
     background-repeat: no-repeat;
     background-position: center;
-    background-attachment: local;
+    background-attachment: fixed;
     align-items: center;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     width: 100vw;
     height: 100vh; 
+    margin: 0;
 
 }
 .herotxt {
@@ -57,26 +81,76 @@ header nav ul li a {
     color: black;
     font-size: 18px;
     line-height: 2;
-
+    text-shadow: 0 0 10px rgb(227, 203, 95);
 
 }
-.boxsub {
-border: red solid 1px;
-flex-wrap: wrap;
-display: flex;
-justify-content: space-between;
-border-width: 3px;
-color: black;
+/* About Me*/
+#about-me{
+    border: magenta solid 3px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 
+}
+
+/*work&Projects Section*/
+#work-projects{
+    border:goldenrod solid 5px;
+    justify-content: space-between;
+    display: flex;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    flex: 1;
+    flex-direction: column;
+    
+}
+.TitleBox{
+    display: flex;
+    border:#635ca8 solid 5px;
+    align-content: center;
+    justify-content: center;
+    flex: 1;
+    flex-wrap:wrap
+    
 }
 .boxmain {
-    border: purple solid 1px;
+    border: purple solid 5px;
+    flex-wrap: wrap;
+    display: inline-flex;
+    justify-content: space-around;
+    border-width: 5px;
+    margin: 0 auto;
+    width: 80%;
+    justify-self: center;
+    
+
+    
+}
+.boxsub {
+    border: red solid 1px;
     flex-wrap: wrap;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     border-width: 3px;
-    color: blue
-}
+    color: black;
+    flex: 1;
+    padding: 25px;
+    min-width: 200px;
+    height: 140px;
+    margin: 10px;
+    border-radius: 25%;
+    background-image: url(../Images/buffalo.jfif);
+    background-size: contain;
+    position:relative
+    
+    }
+    .boxsub:hover{
+        background-color: #635ca8;
+        opacity: .8;
+    
+    }
+
+    
 .work-projects{
     display: flex;
     flex-wrap: wrap;
@@ -84,4 +158,33 @@ color: black;
     text-align: center;
     justify-content: center;
     flex-direction: column;
+}
+/*Contact Me Section*/
+#contact{
+    border: purple solid 5px;
+    flex-wrap: wrap;
+    display: inline-flex;
+    justify-content: space-around;
+    border-width: 5px;
+    margin: 0 auto;
+    width: 80%;
+    align-items: center;
+    height: 300px;    
+    flex: 1;
+    display: flex
+}
+.contacttxt{
+    border: purple solid 3px;
+}
+/*Footer*/
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    border: black solid 3px;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100px;
+    text-align: center;
+
 }
