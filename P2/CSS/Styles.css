@@ -4,9 +4,9 @@
     box-sizing: border-box;
 }
 body{
-    color:black;
+    color:whitesmoke;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: whitesmoke;
+    background-color: black
 }
 /*JayWhite Header Txt*/
 header {
@@ -19,6 +19,7 @@ header {
     z-index: 9999;
     position: -webkit-sticky;
     position: fixed;
+    width: 100%;
 
 }
 header span{
@@ -82,15 +83,23 @@ header nav ul li a:hover{
     font-size: 18px;
     line-height: 2;
     text-shadow: 0 0 10px rgb(227, 203, 95);
+    
 
 }
 /* About Me*/
 #about-me{
     border: magenta solid 3px;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     text-align: center;
-
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 0 auto; 
+    background-color: transparent;
+    position: relative;
 }
 
 /*work&Projects Section*/
@@ -126,6 +135,34 @@ header nav ul li a:hover{
 
     
 }
+.big{
+    border: gold solid 3px;
+    width: 100%;
+}
+.runbuddy {
+    border: red solid 1px;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+    border-width: 3px;
+    color: black;
+    flex: 1;
+    padding: 25px;
+    min-width: 400px;
+    height: 350px;
+    margin: 10px;
+    border-radius: 25%;
+    background-image: url(../Images/buffalo.jfif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position:relative
+
+}
+.runbuddy:hover{
+    background-color: #635ca8;
+    opacity: .8;
+
+}
 .boxsub {
     border: red solid 1px;
     flex-wrap: wrap;
@@ -135,8 +172,8 @@ header nav ul li a:hover{
     color: black;
     flex: 1;
     padding: 25px;
-    min-width: 200px;
-    height: 140px;
+    max-width: 200px;
+    min-height: 140px;
     margin: 10px;
     border-radius: 25%;
     background-image: url(../Images/buffalo.jfif);
