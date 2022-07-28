@@ -17,8 +17,6 @@ header {
     padding: 20px 35px;
     text-shadow: 0 0 10px rgba(56, 162, 197, 0.951);
     z-index: 9999;
-    position: -webkit-sticky;
-    position: fixed;
     width: 100%;
 
 }
@@ -34,6 +32,7 @@ header h1 {
     margin: 0;
 }
 /*End JayWhite Header Txt*/
+/*Header Nav Links*/
 header nav{
     margin: 7px 0;
 }
@@ -62,7 +61,7 @@ header nav ul li a:hover{
 
 }
 .hero{
-    background-image: url("../images/sunset.jpg");
+    background-image: url("../Images/sunset.jpg");
     background-repeat: no-repeat;
     background-position: center;
     align-items: center;
@@ -119,7 +118,7 @@ header nav ul li a:hover{
     justify-content: space-around;
     align-items: center;
     text-align: center;
-    width: 100%;
+    width: 60%;
     flex: 1;
     display: flex;
     flex-wrap: wrap;
