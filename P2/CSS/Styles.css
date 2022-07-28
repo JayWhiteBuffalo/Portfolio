@@ -56,7 +56,7 @@ header nav ul li a {
     
 }
 header nav ul li a:hover{
-    background-color: blue;
+    background-color: whitesmoke;
     border-radius: 50%;
     opacity: 0.7;
 
@@ -65,15 +65,30 @@ header nav ul li a:hover{
     background-image: url("../images/sunset.jpg");
     background-repeat: no-repeat;
     background-position: center;
-    background-attachment: fixed;
     align-items: center;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     width: 100vw;
     height: 100vh; 
-    margin: 0;
+    margin: 0 auto;
+    flex: 1;
+    flex-wrap: wrap;
+    display: inline-flexbox;
+    width: 100%;
 
+}
+.HeroFlex{
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+    color: black;
+    flex: 1;
+    padding: 25px;
+    max-height:300px;
+    margin: 0, auto;
+/*Length of Hero pic*/
+    max-width: 1000px;
 }
 .herotxt {
     width: 35%;
@@ -83,12 +98,24 @@ header nav ul li a:hover{
     font-size: 18px;
     line-height: 2;
     text-shadow: 0 0 10px rgb(227, 203, 95);
+    flex: 1;
+    flex-wrap: wrap;
+    display: flex;
     
 
 }
+.avatar img{
+    border: black solid 2px;
+    border-radius: 50%;
+    flex: 1;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+
+    position: relative;
+}
 /* About Me*/
 #about-me{
-    border: magenta solid 3px;
     justify-content: space-around;
     align-items: center;
     text-align: center;
@@ -100,11 +127,11 @@ header nav ul li a:hover{
     margin: 0 auto; 
     background-color: transparent;
     position: relative;
+    margin-bottom: 100px;
 }
 
 /*work&Projects Section*/
 #work-projects{
-    border:goldenrod solid 5px;
     justify-content: space-between;
     display: flex;
     margin: 0 auto;
@@ -113,58 +140,63 @@ header nav ul li a:hover{
     flex-direction: column;
     
 }
+/*Work&Projects Title*/
 .TitleBox{
     display: flex;
-    border:#635ca8 solid 5px;
     align-content: center;
     justify-content: center;
     flex: 1;
-    flex-wrap:wrap
-    
+    flex-wrap:wrap;
+    margin-bottom: 35px;
 }
 .boxmain {
-    border: purple solid 5px;
     flex-wrap: wrap;
     display: inline-flex;
     justify-content: space-around;
+    align-items: center;
     border-width: 5px;
     margin: 0 auto;
     width: 80%;
     justify-self: center;
-    
-
-    
+    flex-direction: column;
 }
 .big{
-    border: gold solid 3px;
     width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    position:relative;
 }
-.runbuddy {
-    border: red solid 1px;
+.big img{  border: blue solid 1px;
     flex-wrap: wrap;
     display: flex;
     justify-content: space-around;
     border-width: 3px;
     color: black;
     flex: 1;
-    padding: 25px;
-    min-width: 400px;
-    height: 350px;
-    margin: 10px;
+    max-width: 400px;
+    max-height: 350px;
+    margin: 0, auto;
     border-radius: 25%;
-    background-image: url(../Images/buffalo.jfif);
-    background-size: cover;
-    background-repeat: no-repeat;
-    position:relative
+    position:relative;
 
 }
-.runbuddy:hover{
+
+.big img:hover{
     background-color: #635ca8;
     opacity: .8;
 
 }
+.boxsubmain{
+    flex: 1;
+    flex-wrap: wrap;
+    display: flex;
+    margin-top: 25px;
+}
 .boxsub {
-    border: red solid 1px;
+    border: blue solid 1px;
     flex-wrap: wrap;
     display: flex;
     justify-content: space-around;
@@ -188,17 +220,15 @@ header nav ul li a:hover{
     }
 
     
-.work-projects{
+#work-projects{
     display: flex;
     flex-wrap: wrap;
-    border: black solid 3px;
     text-align: center;
     justify-content: center;
     flex-direction: column;
 }
 /*Contact Me Section*/
 #contact{
-    border: purple solid 5px;
     flex-wrap: wrap;
     display: inline-flex;
     justify-content: space-around;
@@ -209,9 +239,6 @@ header nav ul li a:hover{
     height: 300px;    
     flex: 1;
     display: flex
-}
-.contacttxt{
-    border: purple solid 3px;
 }
 /*Footer*/
 footer{
