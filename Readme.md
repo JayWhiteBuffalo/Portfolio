@@ -1,4 +1,4 @@
-![JayWhiteBuffalo Portfolio](P2\Images\JayWhiteSite.png)
+![JayWhiteBuffalo Portfolio](.\P2\Images\JayWhiteSite.png)
 
 # **JayWhiteBuffalo Portfolio**   
 
