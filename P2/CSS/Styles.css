@@ -194,6 +194,40 @@ header nav ul li a:hover{
     display: flex;
     margin-top: 25px;
 }
+.boxsub1 {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+    border-width: 3px;
+    color: black;
+    flex: 1;
+    padding: 25px;
+    max-width: 200px;
+    min-height: 140px;
+    margin: 10px;
+    border-radius: 25%;
+    position:relative;
+}
+.boxsub1 img
+{  border: blue solid 1px;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+    border-width: 3px;
+    color: black;
+    flex: 1;
+    max-width: 400px;
+    max-height: 350px;
+    margin: 0, auto;
+    border-radius: 25%;
+    position:relative;
+
+}
+.boxsub1 img:hover{
+    background-color: #635ca8;
+    opacity: .8;
+}
+    
 .boxsub {
     border: blue solid 1px;
     flex-wrap: wrap;
@@ -212,7 +246,7 @@ header nav ul li a:hover{
     position:relative
     
     }
-    .boxsub:hover{
+.boxsub:hover{
         background-color: #635ca8;
         opacity: .8;
     
